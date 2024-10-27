@@ -29,10 +29,10 @@ const Layout = () => {
       label: "Informes",
       command: () => navigate("/projects"),
     },
-    {
-      label: "Usuarios",
-      command: () => navigate("/projects"),
-    },
+    // {
+    //   label: "Usuarios",
+    //   command: () => navigate("/projects"),
+    // },
   ];
 
   if (hideLayout) {
