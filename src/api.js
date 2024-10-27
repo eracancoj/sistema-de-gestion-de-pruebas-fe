@@ -119,6 +119,12 @@ export const updateTestCase = async (id, testCaseData) => {
   });
 };
 
+export const deleteTestCase = async (id) => {
+  return await axios.delete(`${API_URL}/test-cases/${id}`, {
+    headers: { Authorization: `Bearer ${localStorage.getItem('token')}` }
+  });
+};
+
 // Obtener todas las Ejecuciones de Prueba
 export const getTestExecutions = async () => {
   return await axios.get(`${API_URL}/test-executions`, {
