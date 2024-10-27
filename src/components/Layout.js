@@ -27,7 +27,7 @@ const Layout = () => {
     },
     {
       label: "Informes",
-      command: () => navigate("/projects"),
+      command: () => navigate("/reports"),
     },
     // {
     //   label: "Usuarios",

@@ -17,6 +17,7 @@ import ProjectPage from "./pages/ProjectPage";
 import ProjectDetailsPage from "./pages/ProjectDetailsPage";
 import TestCasesPage from "./pages/TestCasesPage";
 import DefectsPage from "./pages/DefectsPage";
+import ReportPage from "./pages/ReportPage";
 
 const App = () => {
   return (
@@ -62,6 +63,14 @@ const App = () => {
             element={
               <Auth>
                 <DefectsPage />
+              </Auth>
+            }
+          />
+                    <Route
+            path="/reports"
+            element={
+              <Auth>
+                <ReportPage />
               </Auth>
             }
           />
